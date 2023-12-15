@@ -1,0 +1,53 @@
+*{
+    font-size: 12px;
+    color : black;
+}
+.header{
+    background-color: black;
+    color:white
+}
+
+html{
+     background-color: #aabbcc;
+     font-size: 12px;
+    }
+    #user {
+        width: 200px; 
+        height:20px;
+        padding: 5px; 
+        box-sizing: border-box;
+        font-size: 12px; 
+    }
+    #pw{
+        width:200px;
+        height:20px;
+        padding:5px;
+        box-sizing:border-box;
+        font-size:12px;
+
+    }
+  
+
+body{
+    width:300px;
+    margin:auto;
+}
+label#mans{
+    color:blue;
+}
+#womans{
+    color:palevioletred;
+}
+h1{
+    font-size:  20px;
+}
+
+h2{
+    color:blueviolet
+}
+.phone{
+    width: 50px;
+    height:20px;
+    padding:5px;
+    box-sizing: border-box;
+}

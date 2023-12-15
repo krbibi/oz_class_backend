@@ -1,0 +1,21 @@
+body {
+    font-family: 'Nanum Pen Script','Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background: rgb(100, 104, 205)
+}
+    
+   
+  p {
+    box-sizing: content-box;
+    font-size: 60px;
+    outline: 8px ridge rgba(10, 100, 200);
+    padding: 30px;
+    border-radius: 20px;
+    border-color: chocolate;
+    color: salmon;
+    background-color:beige;
+}

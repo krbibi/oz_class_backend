@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>태그를 사용해보자!</title>
+</head>
+<body>
+    <header>
+            <legend>오즈코딩스쿨</legend>
+                <label for="study">교육과정 : </label>
+                <select>
+                    <option>백엔드</option>
+                    <option>프론트엔드</option> 
+                    <option>풀스택</option>
+                </select>
+                <br>
+                <label for="name">이름 : </label>
+                <input type="text">
+                <br>    
+                <label for="hobby"> 지원동기 : </label>
+                <textarea rows="5" cols="30"> </textarea>
+                <br>
+                <input type="submit">
+                 
+    </header>
+            <hr>
+    <main>
+            <fieldset>
+
+            <legend> <strong>좋아하는 과목</strong></legend>
+          <ul>
+            <li> 진짜 파이썬은 아니에요</li>
+            <li> 아니에요 진짜 파이썬은</li>
+            <li> 파이썬은 아니에요 진짜</li>
+          </ul>
+        </fieldset>
+            <hr>
+          <ol>  
+            <p> <h1> 공부를 더 해야하는게 있다면?</h1> </p>
+
+            <li>파이썬</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            
+          </ol>  
+          <hr>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+</body>
+</html>

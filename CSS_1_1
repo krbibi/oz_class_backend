@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>볼링회사 회원가입</title>
+    <link href ="css이용한회원가입.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+     <h1 class="header"> 00볼링회사 회원가입<h1>
+     <fieldset>
+        <label>아이디 : </label>
+        <input type="text" 
+        id="user" 
+        name="name"
+        placeholder="이메일@.com 형식으로 만드세요">
+        <br>
+        <label>비밀번호 : </label>
+        <input type="password"
+        id="pw"
+        neme="password"
+        placeholder="비밀번호">
+        <br>
+        <label>비밀번호확인 : </label>
+        <input type="password"
+        id="repw"
+        neme="password"
+        placeholder="비밀번호확인">
+
+    </fieldset>
+
+    <fieldset>
+        <input type="text" 
+        id="name" 
+        name="name"
+        placeholder="이름">
+        <br>
+        <input type="text"
+        id="birthdate"
+        neme="birthdate"
+        placeholder="생년월일8자리">
+        <br>
+        <input type="radio" id="man" name="sex">
+                <label id="mans">남자</label>
+        <input type="radio" id="woman" name="sex">
+                <lavel id="womans">여자</lavel>
+        <br>
+        <hr>
+        <label> 휴대전화번호 : </label>
+
+        <input type="text" id="010" name="number" class="phone">
+        <input type="text" id="1234" name="number" class="phone">
+        <input type="text" id="5678" name="number"class="phone">
+        
+    
+            <h2>통신사</h2>
+            
+                <select>
+                    <option>-------</option>
+                    <option>LG</option>
+                    <option>KT</option> 
+                    <option>SK</option>
+                    <option>알뜰폰</option>
+                </select>
+                <br>
+                <input type="submit">
+
+    </fieldset>
+</body>
+</html>

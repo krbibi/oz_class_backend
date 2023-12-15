@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>볼링회사 회원가입</title>
+</head>
+<body>
+    
+     <h2> 00볼링회사 회원가입<h2>
+     <fieldset>
+        <input type="text" 
+        id="user" 
+        name="name"
+        placeholder="아이디">
+        <br>
+        <input type="password"
+        id="pw"
+        neme="password"
+        placeholder="비밀번호">
+
+    </fieldset>
+
+    <fieldset>
+        <input type="text" 
+        id="name" 
+        name="name"
+        placeholder="이름">
+        <br>
+        <input type="text"
+        id=""
+        neme="birthdate"
+        placeholder="생년월일8자리">
+        <br>
+        <input type="radio" id="canker" name="sex">
+                <label>남자</label>
+        <input type="radio" id="canker" name="sex">
+                <lavel>여자</lavel>
+        <br>
+        <hr>
+        <input type="text" id="phonnummber" name="number"
+        placeholder="휴대전화번호">
+    
+            <p>통신사</p>
+            
+                <select>
+                    <option>-------</option>
+                    <option>LG</option>
+                    <option>KT</option> 
+                    <option>SK</option>
+                    <option>알뜰폰</option>
+                </select>
+                <br>
+                <input type="submit">
+
+    </fieldset>
+</body>
+</html>

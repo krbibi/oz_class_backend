@@ -28,7 +28,7 @@
         placeholder="이름">
         <br>
         <input type="text"
-        id=""
+        id="birthdate"
         neme="birthdate"
         placeholder="생년월일8자리">
         <br>

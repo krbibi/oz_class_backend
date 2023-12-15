@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>볼링 설문조사</title>
+</head>
+<body>
+    <header>
+        <h1> 볼링 설문조사입니다.</h1>
+        <p><strong> 반드시 솔직하게 작성해주세요</strong></p>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <ol>
+                <label for="name">이름 : </label>
+                <input type="text" id="bolwer" name="name">
+                <br>
+                <br>
+                <label for="local">상주볼링장 : </label> 
+                <input type="text" id="bowling" name="place">
+                <hr>
+                <li>연령대가 어떻게 되십니까?</li>
+                <br>
+                <input type ="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type ="radio" id="twenty"name="age">
+                <label for="teen">20대</label>
+                <input type ="radio" id="thirty"name="age">
+                <label for="teen">30대</label>
+                <input type ="radio" id="fourty"name="age">
+                <label for="teen">40대</label>
+                <input type ="radio" id="fifty"name="age">
+                <label for="teen">50대</label>
+                <input type ="radio" id="other"name="age">
+                <label for="teen">그외</label>
+                <br>
+                <hr>
+                <li>손 사용여부 </li>
+                <br>
+                <input type ="radio" id="righthand"name="hand">
+                <label for="hand">오른손</label>
+                <input type ="radio" id="lefthand"name="hand">
+                <label for="hand">왼손</label>
+                <input type ="radio" id="twohand"name="hand">
+                <label for="hand">양손</label>
+                <hr>
+                <li> 사용 하시는 구질이 어떻게 되나요?</li>
+                <br>
+                <input type="radio" id="stroker" name="bowlertypye">
+                <label for="stroker">스트로커</label>
+                <input type="radio" id="tweener" name="bowlertypye">
+                <label for="tweener">트위너</label>
+                <input type="radio" id="canker" name="bowlertypye">
+                <label for="canker">크랭커</label>
+                <hr>
+                
+                
+            
+
+                <li>볼링장에서 가장 중요하게 생각하는 것은 무엇입니까? 모두 고르세요.</li>
+                
+                <input type="checkbox" id="position" name="academy">
+                <label for="position">가격</label  >
+                <input type="checkbox" id="position" name="academy">
+                <label for="price">친절</label>
+                <input type="checkbox" id="position" name="academy">
+                <label for="teacher">프로</label>
+                <input type="checkbox" id="position" name="academy">
+                <label for="infra">시설</label>
+
+                
+            
+            
+                <br>
+                
+                <li>기타 의견</li> <!--row 세로 clos 가로 -->
+                <br>
+                <textarea rows="3" cols="30" name="comment"></textarea>
+            </ol>
+            </fieldset>
+            <br>
+            <input type="submit">
+            
+            
+        </form>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <p> 설문에 응해주셔서 감사합니다.</p>
+    </footer>
+</body>
+</html>

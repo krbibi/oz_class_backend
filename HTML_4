@@ -32,9 +32,9 @@
         neme="birthdate"
         placeholder="생년월일8자리">
         <br>
-        <input type="radio" id="canker" name="sex">
+        <input type="radio" id="man" name="sex">
                 <label>남자</label>
-        <input type="radio" id="canker" name="sex">
+        <input type="radio" id="woman" name="sex">
                 <lavel>여자</lavel>
         <br>
         <hr>

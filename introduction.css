@@ -1,0 +1,15 @@
+*{
+    text-align: left;
+}
+
+html{
+    background-color: #aee4d2;
+}
+.picture{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+}
+.insta{
+    width: 20px;
+}

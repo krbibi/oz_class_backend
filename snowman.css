@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 100px;
+    background-color: #44d5e5; 
+  }
+  .snowman{
+    position:relative;
+    width: 100px;
+    height:190px;
+  }
+  .snowman1 {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF; 
+    border-radius: 800px 800px 800px 800px;
+    position: relative;
+  }
+  .snowman2 {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF; 
+    border-radius: 800px 800px 800px 800px;
+    position: absolute;
+    bottom:10px;
+    right:0px;  
+}
+
+  .eye1 {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  
+  .eye2 {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left:60px;
+  }
+  
+  .nose {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid orange; 
+    position: absolute;
+    top: 50px;
+    left:40px;     
+}
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top:25%;
+    left:45%;   
+}
+.button2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:45%;   
+}
+.button3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    background-color: black; 
+    border-radius: 50%;
+    position: absolute;
+    top:75%;
+    left:45%;   
+}

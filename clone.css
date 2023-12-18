@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    margin: 50px auto 30px;
+}
+h1 a img{ width: 200px;}
+main{
+    width: 500px; 
+    position: relative;
+    margin: 0 auto;
+}
+
+#login_btn{
+    border:2px solid #aaa; 
+    color:#fff;
+    display:block; 
+    text-align: center; 
+    background: #0074e9; 
+    padding: 20px 0; 
+    width: 100%;
+}
+.join_link{
+    border:2px solid #aaa; 
+    color:#0074e9;
+    display:block; 
+    text-align: center; 
+    background: #fff; 
+    padding: 20px 0; 
+    width: 100%;
+}
+.btm{
+    display: flex; 
+    flex-flow: row nowrap;
+}
+.idpw_search{
+    font-size: 12px;
+    
+}

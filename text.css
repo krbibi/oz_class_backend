@@ -1,0 +1,54 @@
+.chat-screen__texts{
+    padding:0;
+    list-style-type: none;
+}
+.chat-screen__texts >.text{
+background-color: sandybrown;
+width:280px;
+height:50px;
+margin:0 0 10px 0;
+font-size: 15px;
+padding: 10px;
+border-radius : 10px;
+line-height: 30px;
+position:relative;
+left:20px;
+}
+.chat-screen__texts >.text_me{
+    background-color: sandybrown;
+    width:280px;
+    height:50px;
+    margin:0 0 10px 0;
+    font-size: 15px;
+    padding: 10px;
+    border-radius : 10px;
+    line-height: 30px;
+    position:relative;
+    left:180px;
+    }
+.chat-screen__texts>.text::after{
+    content:"";
+    border-right: 16px solid sandybrown;
+    border-bottom: 16px solid transparent;
+    position:absolute;
+    top:10px;
+    left:-10px;
+}
+.chat-screen__texts>.text_me::after{
+    content:"";
+    border-left: 16px solid sandybrown;
+    border-bottom: 16px solid transparent;
+    position:absolute;
+    top:10px;
+    right:-10px;
+}
+
+.chat-screen__texts > .text:hover{
+    background-color: orange;
+    transition: background-color 1500ms 200ms ease-in;
+}
+
+.chat-screen__texts > .text:hover::after{
+    border-right:16px solid orange;
+    transition: border-right 1500ms 200ms ease-in;
+}

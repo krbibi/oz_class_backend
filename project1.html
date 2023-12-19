@@ -4,18 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>햄버거 바 만들기</title>
-    <link href="project1.css" rel="stylesheet">
     <style>
-        
+        header{
+            width:100%;
+            overflow:hidden;
+        }
+        .mobile_menu_btn{
+            display:none;
+        }
+        ul.menu_area{
+            width:100%;
+            display:block;
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        ul.menu_area > .menu_single:first-child{
+            background: #ff4f4f;
+        }
+        ul.menu_area > .menu_single{
+            width:20%;
+            float:left;
+            background:gray;
+        }
+        ul.menu_area > .menu_single > a{
+            display:inline-block;
+            text-decoration:none;
+            text-align: center; 
+            padding:20px 0; 
+            width:100%; 
+            color:#ffffff;}
+        ul.menu_area > .menu_single:hover{
+            background: #fff;
+            }
+        ul.menu_area > .menu_single:hover > a {
+            color:black;
+        }
+        @media screen and (max-width: 550px){
+            .mobile_menu_btn{
+                display:block;
+                font-size:50px;
+                text-align:center;
+            }
+            .ul.menu_area{display:none;}
+            ul.menu_area.opened{display:block;}
+            ul.menu_area > .menu_single{width:100%;}
+        }
+
     </style>
 </head>
 <body>
-    <p>햄버거 바 만들기</p>
-    <div class="burger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-
+    <header>
+        <div class="mobile_menu_btn">Bowling</div>
+        <ul class="menu_area">
+            <li class="menu_single"><a href="#">볼링센터</a></li>
+            <li class="menu_single"><a href="#">볼링볼</a></li>
+            <li class="menu_single"><a href="#">볼링백</a></li>
+            <li class="menu_single"><a href="#">커뮤니티</a></li>
+            <li class="menu_single"><a href="#">대회</a></li>
+        </ul>
+    </header>
 </body>
 </html>

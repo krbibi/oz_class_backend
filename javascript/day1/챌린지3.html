@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="hobby"></p>
+    <script>
+      const name1 = document.querySelector("#name");
+      let name = prompt("이름이 어떻게되세요");
+      name1.textContent = name;
+
+      const age1 = document.querySelector("#age");
+      let age = prompt("나이가 어떻게되세요");
+      age1.textContent = age;
+      
+      const hobby1 = document.querySelector("#hobby");
+      let hobby = prompt("취미가 어떻게되세요");
+      hobby1.textContent = hobby;
+    </script>
+  </body>
+</html>

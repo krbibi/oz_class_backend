@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>볼링회사 회원가입</title>
+
+    <style>
+      label {
+        font-size: 18px;
+      }
+      p {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>00볼링회사 회원가입</h2>
+    <form id="signupForm">
+      <fieldset>
+        <input type="text" id="userId" name="name" placeholder="아이디" />
+        <br />
+        <input
+          type="password"
+          id="userPw"
+          name="password"
+          placeholder="비밀번호"
+        />
+      </fieldset>
+
+      <fieldset>
+        <input type="text" id="userName" name="name" placeholder="이름" />
+        <br />
+        <input
+          type="text"
+          id="birthdate"
+          name="birthdate"
+          placeholder="생년월일8자리"
+        />
+        <br />
+        <input type="radio" id="male" name="sex" />
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="sex" />
+        <label for="female">여자</label>
+        <br />
+        <hr />
+        <input
+          type="text"
+          id="phoneNumber"
+          name="number"
+          placeholder="휴대전화번호"
+        />
+
+        <p>통신사</p>
+
+        <select id="telecom">
+          <option>-------</option>
+          <option>LG</option>
+          <option>KT</option>
+          <option>SK</option>
+          <option>알뜰폰</option>
+        </select>
+        <br />
+        <input type="submit" value="가입하기" />
+      </fieldset>
+    </form>
+
+    <script>
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const userId = document.getElementById("userId").value;
+          const userPw = document.getElementById("userPw").value;
+          const userName = document.getElementById("userName").value;
+          const birthdate = document.getElementById("birthdate").value;
+          const gender = document.querySelector(
+            'input[name="sex"]:checked'
+          ).value;
+          const phoneNumber = document.getElementById("phoneNumber").value;
+          const telecom = document.getElementById("telecom").value;
+
+          console.log("아이디:", userId);
+          console.log("비밀번호:", userPw);
+          console.log("이름:", userName);
+          console.log("생년월일:", birthdate);
+          console.log("성별:", gender);
+          console.log("휴대전화번호:", phoneNumber);
+          console.log("통신사:", telecom);
+        });
+    </script>
+  </body>
+</html>

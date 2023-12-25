@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성적표</title>
+  </head>
+  <body>
+    <img src="/2회차/조건.png" />
+
+    <p></p>
+    <script>
+      const p = document.querySelector("p");
+
+      let grade = prompt("성적을 입력하시오");
+
+      if (grade < 60) {
+        p.textContent = `나의 점수는${grade}점 학점은 F 입니다`;
+      }
+      if (60 <= grade <= 69) {
+        p.textContent = `나의 점수는${grade}점 학점은 D 입니다`;
+      }
+      if (70 <= grade <= 79) {
+        p.textContent = `나의 점수는${grade}점 학점은 C 입니다`;
+      }
+      if (80 <= grade <= 89) {
+        p.textContent = `나의 점수는${grade}점 학점은 B 입니다`;
+      }
+      if (grade >= 90) {
+        p.textContent = `나의 점수는${grade}점 학점은 A 입니다`;
+      }
+    </script>
+  </body>
+</html>

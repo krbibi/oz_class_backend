@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위바위보 게임</title>
+  </head>
+  <body>
+    <div id="head">
+      <h2>가위바위 보</h2>
+      <p>가위, 바위, 보 중 하나를 입력하세요.</p>
+      <form id="main">
+        <input type="text" id="text" />
+        <button type="submit">결과확인</button>
+      </form>
+    </div>
+    <div id="result"></div>
+
+    <script>
+      const game = document.getElementById("main");
+      game.addEventListener("submit", function (event) {
+        event.preventDefault(); // 폼 제출 기본 동작 막기
+        playGame(); // playGame 함수 호출
+      });
+
+      function playGame() {
+        const userChoice = document.getElementById("text").value; //내 선택지 . 텍스트 값
+        const choices = ["가위", "바위", "보"]; //선택지 종류
+        const computerChoice = choices[Math.floor(Math.random() * 3)];
+        // 컴퓨터 선택지 0~3
+        const resultElement = document.getElementById("result");
+        // 결과 상수 = div 태그 요소를 불러온다. / 즉 텍스트 값으로 줄 것
+        if (userChoice == computerChoice) {
+          resultElement.textContent = `당신의 선택 : ${userChoice} / 
+          컴퓨터의 선택 : ${computerChoice} / 결과 : 비겼습니다!`;
+        } else if (
+          (userChoice == "가위" && computerChoice == "보") ||
+          (userChoice == "바위" && computerChoice == "가위") ||
+          (userChoice == "보" && computerChoice == "바위")
+        ) {
+          resultElement.textContent = `당신의 선택 : ${userChoice} / 
+          컴퓨터의 선택 : ${computerChoice} / 결과 : 이겼습니다!`;
+        } else {
+          resultElement.textContent = ` 당신의 선택 : ${userChoice} /
+           컴퓨터의 선택 : ${computerChoice} / 결과 : 졌습니다!`;
+        }
+      }
+    </script>
+  </body>
+</html>

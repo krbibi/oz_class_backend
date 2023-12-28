@@ -17,34 +17,34 @@
     <div id="result"></div>
 
     <script>
-      const game = document.getElementById("main");
-      game.addEventListener("submit", function (event) {
-        event.preventDefault(); // 폼 제출 기본 동작 막기
-        playGame(); // playGame 함수 호출
-      });
-
       function playGame() {
+        //함수 선언
         const userChoice = document.getElementById("text").value; //내 선택지 . 텍스트 값
         const choices = ["가위", "바위", "보"]; //선택지 종류
-        const computerChoice = choices[Math.floor(Math.random() * 3)];
+        const computerChoice = choices[Math.floor(Math.random() * 3)]; // 랜덤값 0,1,2 가 초이스 배열의 0 1 2 가 되어 가위,바위,보가 된다.
         // 컴퓨터 선택지 0~3
-        const resultElement = document.getElementById("result");
-        // 결과 상수 = div 태그 요소를 불러온다. / 즉 텍스트 값으로 줄 것
+        const result = document.getElementById("result");
+        // 결과 상수 = div 태그 요소를 불러온다. 인풋과 버튼 아래에 결과 적어줄 것
         if (userChoice == computerChoice) {
-          resultElement.textContent = `당신의 선택 : ${userChoice} / 
+          result.textContent = `당신의 선택 : ${userChoice} / 
           컴퓨터의 선택 : ${computerChoice} / 결과 : 비겼습니다!`;
         } else if (
           (userChoice == "가위" && computerChoice == "보") ||
           (userChoice == "바위" && computerChoice == "가위") ||
           (userChoice == "보" && computerChoice == "바위")
         ) {
-          resultElement.textContent = `당신의 선택 : ${userChoice} / 
+          result.textContent = `당신의 선택 : ${userChoice} / 
           컴퓨터의 선택 : ${computerChoice} / 결과 : 이겼습니다!`;
         } else {
-          resultElement.textContent = ` 당신의 선택 : ${userChoice} /
+          result.textContent = ` 당신의 선택 : ${userChoice} /
            컴퓨터의 선택 : ${computerChoice} / 결과 : 졌습니다!`;
         }
       }
+      const game = document.getElementById("main");
+      game.addEventListener("submit", function (e) {
+        e.preventDefault(); // 초기화, 원래상태로 돌아가는 것을 방지한다.
+        playGame(); //playGame 함수 호출
+      });
     </script>
   </body>
 </html>

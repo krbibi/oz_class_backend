@@ -1,4 +1,4 @@
-### CPU의 구성요소 ALU,CU 그리고 레지스터 각각의 역할을 간략하게 정리해보자
+###CPU의 구성요소 ALU,CU 그리고 레지스터 각각의 역할을 간략하게 정리해보자
 
 - ALU(Arithmetic and logical unit) : 산술논리연산자 연산담당파트 (산술:덧,뺄 / 논리 : and, or)
 - CU(Control unit) : CPU에게 명령어가 전달되면 명령어를 해석
